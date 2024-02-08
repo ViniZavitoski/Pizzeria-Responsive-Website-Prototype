@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    transform: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.btn{
+    display: inline-block;
+    font-size: 1.7rem;
+    color: red;
+    background: none;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border: 1px solid red;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    background: red;
+    color: #fff;
+}
+
+.top{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 1000;
+    background: red;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.top .logo{
+    font-size: 2.5rem;
+    color:white;
+    font-weight: bolder;
+}
+
+.top .logo i{
+    color: yellow;
+    padding-right: .5rem;
+    rotate: 175deg;
+}
+
+.top .menu-site a{
+    color: white;
+    font-size: 1.7rem;
+    margin: 0 1rem;
+
+}
+
+.top .menu-site a:hover{
+    color: yellow;
+}
+
+.top .icons div{
+
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+}
+
+.top .icons div:hover{
+    color: yellow;
+}
+
+#menu{
+    display: none;
+}
+
+.top .carrinho{
+    width: 35rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    position: absolute;
+    top: 115%;
+    right: -105%; /*Para esconder o botao*/
+    padding: 2rem;
+}
+
+.top .carrinho.active{
+    right: 2rem;
+    transition:  .4s linear;
+}
+
+.top .carrinho .box{
+    position: relative;
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.top .carrinho .box .fa-times{
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.top .carrinho .box .fa-times:hover{
+    color: red;
+}
+
+.top .carrinho .box img{
+    height: 10rem;
+}
+
+.top .carrinho .box .content h3{
+    font-size: 1.7rem;
+    padding: .5rem;
+    color: #130f40;
+
+}
+
+.top .carrinho .box .content span{
+    font-size: 1.7rem;
+    color: #777;
+}
+
+.top .carrinho .box .content span.multiplica{
+    margin: 0.5rem;
+}
+
+.top .carrinho .total{
+    font-weight: 2.2rem;
+    color: #130f40;
+    text-align: center;
+}
+
+.top .carrinho .btn{
+    width: 100%;
+    text-align: center;
+}
+
+.top .login-form{
+    position: absolute;
+    top: 115%;
+    right: -105%; /*Para esconder*/
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    width: 35rem;
+    padding: 2rem;
+}
+
+.top .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.top .login-form h3{
+    font-size: 2.2rem;
+    color: #130f40;
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+    text-align: center;
+
+}
+
+.top .login-form .box{
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-transform: none;
+    color: #130f40;
+}
+
+.top .login-form .lembrar-senha{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .7rem 0;
+}
+
+.top .login-form .lembrar-senha label{
+    font-size: 1.5rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.top .login-form .btn{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.msflix-destaque{
+    padding: 0;
+}
+
+.msflix-destaque .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+
+}
+
+.msflix-destaque .slide .content{
+    display: none;
+    width: 60rem;
+    text-align: center;
+
+}
+
+.msflix-destaque .slide .content h3{
+    font-size: 6rem;
+    line-height: 1.3;
+    color: #fff;
+    padding: 2rem 0;
+    animation: sliderMaykon 1s ease forwards;
+
+}
+
+.msflix-destaque .slide .content span{
+    color: yellow;
+}
+
+.msflix-destaque .slide .content .btn{
+    background-color: red;
+    color: #fff;
+}
+
+.msflix-destaque .slide .content .btn:hover{
+    background-color: yellow;
+    color: #130f40;
+    border: none;
+    animation: sliderReveal 1s ease forwards;
+}
+
+.msflix-destaque .swiper-slide-active .content{
+    display: inline-block;
+
+}
+
+.msflix-destaque .swiper-slide-active{
+    animation: msflixScale 4s linear forwards;
+}
+
+@keyframes sliderMaykon{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes msflixScale{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.15);
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    margin-left: 1.5rem;
+    color: red;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 1.5rem;
+    transform: rotate(-45deg);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    color: #fff;
+}
+
+@media(max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem;
+    }
+
+    .top{
+        padding: 2rem;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .top .icons #menu{
+        display: inline-block;
+
+    }
+
+    .top .menu-site{
+        position: absolute;
+        top: 110%;
+        right: 110%;
+        width: 30rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0.1);
+    }
+
+    .top .menu-site.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .top .menu-site a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+    }
+
+    .msflix-destaque .slide .content h3{
+        font-size: 4rem;
+    }
+
+    .top .menu-site a{
+        color: #000;
+        border-bottom: 1px solid #000;
+        border-bottom-style: dotted;
+    }
+}
+
+@media(max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .msflix-destaque .slide .content h3{
+        font-size: 3.5rem;
+    }
+
+    .top .menu-site a{
+        color: #000;
+        border-bottom: 1px solid #000;
+        border-bottom-style: dotted;
+    }
+
+}

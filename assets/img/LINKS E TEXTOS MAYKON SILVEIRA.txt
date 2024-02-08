@@ -1,0 +1,121 @@
+https://swiperjs.com/get-started#use-swiper-from-cdn
+
+https://fonts.google.com/specimen/Poppins?query=poppins
+
+https://br.freepik.com/
+
+https://www.lipsum.com/feed/html
+
+<!--INICIO CSS ICONES MAYKONSILVEIRA.COM.BR-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!--INICIO CSS SLIDE MAYKONSILVEIRA.COM.BR-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!--INICIO CSS GALERIA MAYKONSILVEIRA.COM.BR-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+<!--INICIO JS DO SLIDE DO SITE MAYKONSILVEIRA.COM.BR-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!--INICIO JS GALERIA DO SITE MAYKONSILVEIRA.COM.BR-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+<script>
+        lightGallery(document.querySelector('.gallery .gallery-container'))
+</script>
+
+
+--------------------------------------------
+
+Inicio Empresa Cardápio Montar Pedido Blog Fale Conosco
+
+--------------------------------------------
+
+A Melhor Pizza do Brasil
+
+--------------------------------------------
+
+Pizza Da Casa
+
+Sobremesas
+
+Pizzas Doces
+
+Pizza Gourmet
+
+-------------------------------------------
+
+Como Funciona?
+
+Escolha Sua Comida Pizza
+
+Entrega Gratuita E Rápida
+
+Métodos De Pagamentos Fáceis
+
+E Finalmente, Aproveite Sua Comida
+
+--------------------------------------------
+
+Produtos:
+
+Calabresa
+Pizza Da EAD MaykonSilveira.Com.Br É A Melhor Pizza Do Mercado
+
+Frango
+Pizza Da EAD MaykonSilveira.Com.Br É A Melhor Pizza Do Mercado
+
+Strogonoff
+Pizza Da EAD MaykonSilveira.Com.Br É A Melhor Pizza Do Mercado
+
+Tomato MS
+Pizza Da EAD MaykonSilveira.Com.Br É A Melhor Pizza Do Mercado
+
+Queijo
+Pizza Da EAD MaykonSilveira.Com.Br É A Melhor Pizza Do Mercado
+
+Da Casa
+Pizza Da EAD MaykonSilveira.Com.Br É A Melhor Pizza Do Mercado
+
+
+--------------------------------------------
+
+Sobre a empresa:
+A Pizzaria Msflix: O Sabor Que Combina Com Sua Diversão
+Se Você É Um Amante De Pizza E De Entretenimento, A Pizzaria Msflix É O Lugar Perfeito Para Satisfazer Seus Desejos Gastronômicos Enquanto Desfruta De Uma Experiência Única. Localizada No Coração Da Cidade, A Msflix Se Destaca Como Um Ponto De Encontro Popular Para Aqueles Que Buscam Uma Combinação Perfeita De Sabor E Diversão.
+
+O Cardápio Da Pizzaria Msflix Oferece Uma Ampla Variedade De Opções De Pizza, Desde As Tradicionais Margheritas Até Criações Inovadoras Que Deixarão Seu Paladar Encantado. Se Você É Fã De Queijo, Peperoni, Cogumelos Ou Uma Combinação De Ingredientes Especiais, A Msflix Tem A Pizza Perfeita Para Você. E O Melhor De Tudo, Você Pode Personalizá-La De Acordo Com Suas Preferências.
+
+---------------------------------------------
+
+Blog:
+
+Sou Aluno(A) Da Ead MaykonSilveira.Com.Br
+Aqui Estou Aprendendo A Programar Programando
+
+---------------------------------------------
+
+Rodapé:
+
+MSPizza
+Estou Dentro Da Comunidade MaykonSilveira.Com.Br
+
+   
+Faça Seu Pedido
+(41)77777-7777
+
+(41)7777-7777
+
+Cursos@Maykonsilveiracom.Br
+Localização
+Rua 777, Nº 77
+Reinado De Jesus
+Nova Jerusalém
+
+Criado Por MaykonSilveira.Com.Br | Todos Os Direitos Reservados!
+---------------------------------------------
+
+CRÉDITOS EAD MAYKONSILVEIRA.COM.BR E MSFLIX.COM.BR 
+PROFESSOR: MAYKON SILVEIRA 
+CANAL: https://www.youtube.com/MAYKONSILVEIRA
+INSTAGRAM: https://www.instagram.com/maykonsilveiramj/
+GRUPO WHATSAPP: https://chat.whatsapp.com/Iz3a88L3s5B8FUnBm4T7UI
+Siga o canal "MaykonSilveira.com.br" no WhatsApp: https://whatsapp.com/channel/0029VaB3IbC2975DvO1sOF2L

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--INICIO CSS ICONES MAYKONSILVEIRA.COM.BR-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--INICIO CSS SLIDE MAYKONSILVEIRA.COM.BR-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="assets/img/msFavicon.png" type="image/x-icon">
+    <title>Pizza Delivery Project</title>
+</head>
+<body>
+    
+    <header class="top">
+        <a href="index.html" class="logo">
+            <i class="fa fa-pizza-slice"></i>
+            MSPizza
+        </a>
+        
+        <nav class="menu-site">
+            <a href="index.html">
+                Inicio
+            </a>
+            <a href="empresa.html">
+                Empresa
+            </a>
+            <a href="menu.html">
+                Cardapio
+            </a>
+            <a href="loja.html">
+                Montar Pedido
+            </a>
+            <a href="blog.html">
+                Blog
+            </a>
+            <a href="contatos.html">
+                Fale Conosco
+            </a>
+        </nav><!--menu-site-->
+
+
+        <div class="icons">
+            <div id="cart" class="fas fa-shopping-cart"></div>
+            <div id="login" class="fas fa-user"></div>
+            <div id="menu" class="fas fa-bars"></div>
+        </div><!--icons-->
+
+        <div class="carrinho">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/img/carrinho/carrinho-1.png" alt="">
+                <div class="content">
+                    <h3>Pizza Frango</h3>
+                    <span class="quantidade">1</span>
+                    <span class="multiplica">x</span>
+                    <span class="valor">R$ 77,77</span>
+                </div><!--content-->
+            </div><!--box-->
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/img/carrinho/carrinho-2.png" alt="">
+                <div class="content">
+                    <h3>Pizza Frango</h3>
+                    <span class="quantidade">1</span>
+                    <span class="multiplica">x</span>
+                    <span class="valor">R$ 77,77</span>
+                </div><!--content-->
+            </div><!--box-->
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="/assets/img/carrinho/carrinho-3.png" alt="">
+                <div class="content">
+                    <h3>Pizza Frango</h3>
+                    <span class="quantidade">1</span>
+                    <span class="multiplica">x</span>
+                    <span class="valor">R$ 77,77</span>
+                </div><!--content-->
+            </div><!--box-->
+            
+
+            <h3 class="total">Total: R$ 777,77</h3>
+            <a href="" class="btn">
+                Ir Para o Carrinho
+            </a>
+        </div><!--carrinho-->
+
+        <form action="" method="post" class="login-form">
+            <h3>Acesse sua conta</h3>
+            <input type="email" name="email" class="box" placeholder="Seu E-mail">
+            <input type="password" name="senha" class="box" placeholder="Seu Senha">
+            <div class="lembrar-senha">
+                <input type="checkbox" name="lembrar" id="relembrar">
+                <label for="relembrar">Me lembrar da senha</label>
+            </div>
+            
+            
+            
+            
+            <button type="submit" name="sendLogin" class="btn">Acessar</button>
+        </form><!--login-form-->
+
+    </header>
+
+    <section class="msflix-destaque">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide slide" style="background: url(assets/img/slides/slider-1.png) no-repeat;">
+                    <div class="content">
+                        <h3>A <span>Melhor</span> pizza <br/> do Brasil</h3>
+                        <a href="" class="btn">Comprar Agora</a>
+                    </div><!--swiper-slide slide-->
+                </div><!--swiper-slide slide-->
+
+                <div class="swiper-slide slide" style="background: url(assets/img/slides/slider-2.png) no-repeat;">
+                    <div class="content">
+                        <h3>A <span>Melhor</span> pizza <br/> do Brasil</h3>
+                        <a href="" class="btn">Comprar Agora</a>
+                    </div><!--swiper-slide slide-->
+                </div><!--swiper-slide slide-->
+
+                <div class="swiper-slide slide" style="background: url(assets/img/slides/slider-3.png) no-repeat;">
+                    <div class="content">
+                        <h3>A <span>Melhor</span> pizza <br/> do Brasil</h3>
+                        <a href="" class="btn">Comprar Agora</a>
+                    </div><!--swiper-slide slide-->
+                </div><!--swiper-slide slide-->
+            
+                
+            </div><!--swiper-wraper-->
+
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div><!--swiper home-slider-->
+    </section><!--msflix-destaque-->
+
+    <!--INICIO JS DO SLIDE DO SITE MAYKONSILVEIRA.COM.BR-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
