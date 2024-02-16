@@ -19,10 +19,6 @@ html{
     scroll-behavior: smooth;
 }
 
-section{
-    padding: 3rem 7%;
-}
-
 .btn{
     display: inline-block;
     font-size: 1.7rem;
@@ -38,6 +34,22 @@ section{
 .btn:hover{
     background: red;
     color: #fff;
+}
+
+section{
+    padding: 3rem 7%;
+}
+
+.titulo{
+    font-size: 2.8rem;
+    color: #130f40;
+    padding: 1.2rem 0;
+    text-align: center;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.titulo span{
+    color: red;
 }
 
 .top{
@@ -348,7 +360,86 @@ section{
     color: #fff;
     margin-bottom: 1rem;
 }
+/*como funciona*/
+.como-funciona .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.como-funciona .box-container .box{
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.como-funciona .box-container .box img{
+    width: 170px;
+    border: 1rem solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.como-funciona .box-container .box h3{
+    font-size: 2.1rem;
+    padding: 1rem;
+    color: #130f40;
+}
+
+/*Loja msflix*/
+.loja .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.loja .box-container .box{
+    text-align: center;
+    overflow: hidden;
+    padding: 0 2.5rem;
+    position: relative;
+}
+
+.loja .box-container .box img{
+    height: 29rem;
+    transition: .4s linear; /*suaviza a animaçao ao passar o mouse*/
+}
+
+.loja .box-container .box img:hover{
+    transform: scale(1.1);
+}
+
+.loja .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: #130f40;
+}
+
+.loja .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.loja .box-container .box .estrelas i{
+    font-size: 1.7rem;
+    color: gold;
+}
+
+.loja .box-container .box .loja_valor{
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.loja .box-container .box .loja_valor span{
+    color: red;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+/*celular*/
 @media(max-width: 991px) {
     html{
         font-size: 55%;
