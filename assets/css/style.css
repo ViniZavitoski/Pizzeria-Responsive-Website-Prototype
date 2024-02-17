@@ -438,6 +438,60 @@ section{
     font-size: 1.5rem;
     text-decoration: line-through;
 }
+/*Empresa*/
+.empresa{
+    background-color: red;
+}
+
+.empresa .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background: red;
+    align-items: center;
+}
+
+.empresa .row .empresa-img{
+    flex: 1 1 32rem;
+}
+
+.empresa .row .empresa-img img{
+    width: 100%;
+    box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.empresa .row .content{
+    flex: 1 1 50rem;
+}
+
+.empresa .row .content h3{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.empresa .row .content h3 span{
+    color: yellow;
+}
+
+.empresa .row .content p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+.empresa .btn{
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .4s linear;
+}
+
+.empresa .btn:hover{
+    background-color: #fffb00;
+    color: #130f40;
+    border: 1px solid #fff;
+    transform: scale(1.1);
+}
 
 /*celular*/
 @media(max-width: 991px) {
