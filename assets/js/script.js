@@ -11,7 +11,12 @@ document.querySelector("#login").onclick = () => {
     login.classList.toggle("active");
 
     carrinho.classList.remove("active");
+}
 
+window.onscroll = () => {
+    carrinho.classList.remove("active");
+    
+    login.classList.remove("active");
 }
 
 const swiper = new Swiper(".home-slider", {

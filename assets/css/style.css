@@ -54,6 +54,31 @@ section{
     color: red;
 }
 
+/*Topo Páginas*/
+.topo-pagina{
+    background: url(/assets/img/topo-paginas-bg.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.topo-pagina h1{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.topo-pagina p{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.topo-pagina a{
+    color: red;
+}
+
 .top{
     display: flex;
     position: fixed;
@@ -629,7 +654,48 @@ section{
     color: gold;
 }
 
-/*celular*/
+/*Galeria De Fotos*/
+.galeria-fotos .galeria-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.galeria-fotos .galeria-container .box{
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria-fotos .galeria-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-fotos .galeria-container .box .icon{
+    justify-content: center;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.galeria-fotos .galeria-container .box .icon i{
+    font-size: 5rem;
+    color: #fff;
+}
+
+.galeria-fotos .galeria-container .box:hover .icon{
+    display: flex;
+}
+
+/*Celular*/
 @media(max-width: 991px) {
     html{
         font-size: 55%;
