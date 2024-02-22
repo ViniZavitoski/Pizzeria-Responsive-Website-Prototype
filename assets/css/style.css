@@ -356,7 +356,7 @@ section{
 .destaque .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
-    gap: 2rem;
+    gap: 1.7rem;
 }
 
 .destaque .box-container .box{
@@ -695,7 +695,127 @@ section{
     display: flex;
 }
 
-/*Celular*/
+/*MENU DE COMPRAS*/
+.menu .slider .titulo{
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    background-color: red;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.menu .slider .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.menu .slider .box-container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 38rem;
+    gap: 1rem;
+    background-color: #eee;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.menu .slider .box-container .box:hover{
+    transform: scale(.95);
+    cursor: pointer;
+}
+
+.menu .slider .box-container .box h3{
+    font-size: 2.2rem;
+    color: #130f40;
+    padding-bottom: .5rem;
+}
+
+.menu .slider .box-container .box p{
+    font-size: 1.4rem;
+    color: #777;
+    line-height: 2;
+}
+
+.menu .slider .box-container .box .valor{
+    font-size: 2.2rem;
+    color: red;
+}
+
+/*JANELA MODAL*/
+.menu-modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-modal-container .menu-modal{
+    background-color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    width: 35rem;
+}
+
+.menu-modal-container .menu-modal.active{
+    display: inline-block;
+}
+
+.menu-modal-container .menu-modal h3{
+    color: #130f40;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.menu-modal-container .menu-modal .estrelinhas{
+    margin-top: 5rem;
+}
+
+
+.menu-modal-container .menu-modal .estrelinhas i{
+    color: red;
+    font-size: 1.7rem;
+}
+
+
+.menu-modal-container .menu-modal p{
+    font-size: 1.5rem;
+    color: #777;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.menu-modal-container .menu-modal .valor{
+    font-size: 2.5rem;
+    color: #130f40;
+    margin-bottom: .5rem;
+}
+
+#fechar{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#fechar:hover{
+    transform: rotate(110deg);
+    color: red;
+}
+
+/*CELULAR*/
 @media(max-width: 991px) {
     html{
         font-size: 55%;
