@@ -1,8 +1,11 @@
+
 let carrinho = document.querySelector(".carrinho");
 document.querySelector("#cart").onclick = () => {
     carrinho.classList.toggle("active");
 
     login.classList.remove("active");
+
+    menuResposivo.classList.remove('active');
 
 };
 
@@ -11,49 +14,41 @@ document.querySelector("#login").onclick = () => {
     login.classList.toggle("active");
 
     carrinho.classList.remove("active");
-};
+
+    menuResposivo.classList.remove('active');
+}
+
 
 window.onscroll = () => {
     carrinho.classList.remove("active");
 
     login.classList.remove("active");
-};
 
-var swiper = new Swiper(".home-slider", {
+    menuResposivo.classList.remove("active");
+}
 
+const swiper = new Swiper('.home-slider', {
+    
     autoplay:{
         delay:2500,
         disableOnInteraction: false,
     },
-    gapCursor: true,
+    grapCursor: true,
     loop: true,
-    centeredSlides: true,
     navigation: {
-        nextE1: '.swiper-button-next',
-        prevE1: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
+  
 });
 
-let verModalCorpo = document.querySelector(".menu-modal-container");
-let verModalBox = verModalCorpo.querySelector(".menu-modal");
+/*menu responsivo*/
 
-document.querySelectorAll(".menu .box").forEach(menu => {
-    menu.onclick = () => {
-        verModalCorpo.style.display = 'flex';
-        let nome = menu.getAttribute('data-name');
+let menuResposivo = document.querySelector('.menu-site');
+document.querySelector('#menu').onclick = () => {
+    menuResposivo.classList.toggle('active');
 
-        verModalBox.forEach(visualizar => {
-            let chamada = visualizar.getAttribute('data-target');
-            if(nome == chamada){
-                visualizar.classList.add('active');
-            };
-        });
-    };
-});
+    login.classList.remove('active');
 
-verModalCorpo.querySelector("#fechar").onclick = () => {
-    verModalCorpo.style.display = 'none';
-    verModalBox.forEach(fechar=> {
-        fechar.classList.remove('active');
-    });
-};;
+    carrinho.classList.remove('active');
+}

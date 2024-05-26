@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url('/assets/js/script.js');
 *{
     padding: 0;
     margin: 0;
@@ -89,7 +88,7 @@ section{
     justify-content: space-between;
     padding: 2rem 9%;
     z-index: 1000;
-    background: red;
+    background: black;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 
@@ -332,13 +331,12 @@ section{
     }
 }
 
-.swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev,
+.swiper-button-next{
     height: 4.5rem;
-    width: 4.5rem;
+    width: 5 rem;
     line-height: 4.5rem;
     margin-left: 1.5rem;
-    color: red;
     transform: translateY(-50%) rotate(45deg);
 }
 
@@ -350,7 +348,7 @@ section{
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
-    color: #fff;
+    color: red;
 }
 
 .destaque .box-container{
@@ -584,7 +582,7 @@ section{
 
 /*Footer*/
 .footer{
-    background-color: red;
+    background-color: black;
     text-align: center;
 }
 
@@ -715,7 +713,7 @@ section{
 .menu .slider .box-container .box{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex: 1 1 38rem;
     gap: 1rem;
     background-color: #eee;
@@ -724,7 +722,7 @@ section{
 }
 
 .menu .slider .box-container .box:hover{
-    transform: scale(.95);
+    transform: scale(.97);
     cursor: pointer;
 }
 
@@ -747,6 +745,7 @@ section{
 
 /*JANELA MODAL*/
 .menu-modal-container{
+    /*display:flex*/
     display: none;
     position: fixed;
     top: 0;
@@ -767,8 +766,8 @@ section{
     width: 35rem;
 }
 
-.menu-modal-container .menu-modal.active{
-    display: inline-block;
+.menu-modal-container.abrir{
+    display: flex;
 }
 
 .menu-modal-container .menu-modal h3{
@@ -778,7 +777,7 @@ section{
 }
 
 .menu-modal-container .menu-modal .estrelinhas{
-    margin-top: 5rem;
+    margin-top: .5rem;
 }
 
 
@@ -814,6 +813,107 @@ section{
     transform: rotate(110deg);
     color: red;
 }
+
+/*CONTATOS*/
+
+.row{
+margin-bottom: 3rem;
+}
+
+iframe{
+    width: 100%;
+}
+
+.contatos .icone-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.contatos .icone-box .icons{
+    text-align: center;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.contatos .icone-box .icons i{
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    line-height: 6rem;
+    background: #eee;
+    border-radius: 50%;
+    color: red;
+    transition: .5s linear;
+}
+
+.contatos .icone-box .icons i:hover{
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contatos .icone-box .icons h3{
+    font-size: 2rem;
+    color: #130f40;
+    padding: 1rem 0;
+}
+
+.contatos .icone-box .icons p{
+    font-size: 1.5rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+.contatos .row{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contatos .row form{
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .6rem 2.4rem rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.contatos .row form h3{
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    color: #130f40;
+}
+
+.contatos .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contatos .row form .inputBox input{
+    width: 49%;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.contatos .row form .inputBox input .box,
+.contatos .row form textarea{
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    margin: .7rem 0;
+    text-transform: none;
+}
+
+.contatos .row form textarea{
+    width: 100%;
+    height: 15rem;
+    resize: none;
+}
+
+
 
 /*CELULAR*/
 @media(max-width: 991px) {
